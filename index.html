@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------------------------- favicon --------------------------------- -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="./src/img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <!-- ----------------------------------- box-icons --------------------------------- -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- ------------------------------------------------------------------------------- -->
@@ -23,7 +27,7 @@
             </a>
 
             <a href="#">
-                <img class="sm:hidden inline w-12 ml-4 absolute z-50 top-2 " src="./src/img/logo-min.png" alt="TortuInternet Logo">
+                <img class="sm:hidden inline w-12 ml-4 absolute z-50 top-2 rounded-full shadow-md shadow-negative" src="./src/img/logo/tortuinternet_logo.png" alt="TortuInternet Logo">
             </a>
         </div>
 
@@ -405,8 +409,6 @@
 
 <!-- ----------------------------------------------------------------CARROUSEL-DESK-END--------------------------------------------------------------------------- -->
 
-
-
     </section>
     <!-- Section: Plans End -->
 
@@ -469,7 +471,7 @@
 
                         <!-- grid-row -->
 
-                        <div class=" font-lato square text-[10px] md:text-[15px] bg-cardin-green-600 flex p-1 my-8 rounded-2xl gap-1 shadow-lg shadow-green-300">
+                        <div class=" font-lato square text-[10px] md:text-[15px] bg-cardin-green-600 flex p-1 my-8 rounded-2xl gap-1 shadow-lg shadow-gray-500">
                             <div class="bg-white text-center w-2/6 flex items-center py-[5px] px-[10px] left">
                                 <p >100% online sin instalación adicional</p>
                             </div>
@@ -497,7 +499,7 @@
 
                 </div>
                 <div class="overflow-hidden rounded-b-[45px] lg:rounded-bl-none lg:rounded-e-[45px] shadow-black shadow-2xl">
-                    <img src="./src/img/tortu-tv-banner.png" class="w-full" />
+                    <img src="./src/img/tortu_tv-section.png" class="w-full" />
                 </div>
 
                 <div class="my-12 content-center flex rounded-md justify-center mx-auto shadow lg:hidden">
@@ -533,44 +535,36 @@
 
                 <div class="flex flex-col lg:flex-row gap-8">
 
-                    <!-- Server 1-->
+                    <!-- Server 1-- EMBY -->
 
-                    <div class="w-[80%] lg:w-full mx-auto p-4 bg-[#fff] shadow-2xl shadow-negative rounded-lg">
-                        <p class="text-[#03210b] text-[30px] leading-[63px] font-bold">
-                            <div style="display: flex; justify-content: center;"> 
-                                <img src="./src/img/apps-movies-2.png" class="w-full shadow-lg rounded-md"/>
+                    <div class="w-[80%] lg:w-full mx-auto p-4 bg-[#fff] shadow-2xl shadow-negative rounded-lg flex flex-col justify-around">
+                            <div> 
+                                <img src="./src/img/emby-server.png" class="w-full shadow-lg rounded-md"/>
                             </div>
-                        </p>
 
-                        <ul class="w-full mt-4 mb-4 text-sm text-gray-600 ">
-
+                        <ul class="w-full mt-4 mb-4 text-sm text-gray-600">
                             <li class="mb-2 text-[#717F87] text-[14px] text-center leading-[12px] font-normal flex items-center ">
                                 Accede solo siendo cliente de Tortuinternet, sin costo extra.
                             </li>
                         </ul>
 
                         
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-3">
 
                             <div class="">                               
-
-                                <button type="button" href="http://192.168.50.5:8096/web/index.html#!/home" class="py-4 px-6 bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                        Acceder a App 1
-                                </button>
+                                <a href="http://192.168.50.5:8096/web/index.html#!/home" alt="Acceso a Servidor de EMBY" >
+                                    <button class="py-4 px-6 bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
+                                        Acceder a EMBY
+                                    </button>
+                                </a>
 
                             </div>
 
-                            <div class="my-1">
-                                <button type="button" href="https://play.google.com/store/apps/details?id=com.mb.android" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                    Ir a Google Playstore
-                                </button>
-                            </div>
-
-                            <div class="my-1">
-                                <a href="#link-apk" download="descripcion"">
-                                <button type="button" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                    Descargar
-                                </button>
+                            <div class="">
+                                <a  href="https://play.google.com/store/apps/details?id=com.mb.android" alt="Descargar EMBY desde Playstore">
+                                    <button type="button" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
+                                        Ir a Google Playstore
+                                    </button>
                                 </a>
                             </div>
 
@@ -580,97 +574,83 @@
 
                     <!-- Server 1 End-->
 
-                    <!-- Server 2-->
-                    <div class="w-[80%] lg:w-full mx-auto p-4 bg-[#fff] shadow-2xl shadow-negative rounded-lg">
-                        <p class="text-[#03210b] text-[30px] leading-[63px] font-bold">
-                            <div style="display: flex; justify-content: center;"> 
-                                <img src="./src/img/apps-movies-2.png" class="w-full shadow-lg rounded-md"/>
-                            </div>
-                        </p>
+                    <!-- Server 2-- IPTV -->
 
-                        <ul class="w-full mt-4 mb-4 text-sm text-gray-600 ">
+                    <div class="w-[80%] lg:w-full mx-auto p-4 bg-[#fff] shadow-2xl shadow-negative rounded-lg flex flex-col justify-around">
+                        <div> 
+                            <img src="./src/img/iptv-server.png" class="w-full shadow-lg rounded-md"/>
+                        </div>
 
-                            <li class="mb-2 text-[#717F87] text-[14px] text-center leading-[12px] font-normal flex items-center ">
-                                Accede solo siendo cliente de Tortuinternet, sin costo extra.
-                            </li>
-                        </ul>
+                    <ul class="w-full mt-4 mb-4 text-sm text-gray-600">
+                        <li class="mb-2 text-[#717F87] text-[14px] text-center leading-[12px] font-normal flex items-center ">
+                            Accede solo siendo cliente de Tortuinternet, sin costo extra.
+                        </li>
+                    </ul>
 
-                        
-                        <div class="flex flex-col gap-2">
+                    
+                    <div class="flex flex-col gap-3">
 
-                            <div class="">                               
+                        <div class="my-1">
+                            <a href="./src/data/apks/iptv7(2).apk" download="Descarga directa APK IPTV">
+                            <button type="button"class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
+                                Descargar
+                            </button>
+                            </a>
+                        </div>
 
-                                <button type="button" href="http://192.168.50.5:8096/web/index.html#!/home" class="py-4 px-6 bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                    Acceder a App 2
-                                </button>
-
-                            </div>
-
-                            <div class="my-1">
-                                <button type="button" href="https://play.google.com/store/apps/details?id=com.mb.android" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
+                        <div class="">
+                            <a href="https://play.google.com/store/apps/details?id=ru.iptvremote.android.iptv" alt="Descargar IPTV desde Playstore">
+                                <button type="button" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
                                     Ir a Google Playstore
                                 </button>
-                            </div>
-
-                            <div class="my-1">
-                                <a href="#link-apk" download="descripcion">
-                                <button type="button" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                    Descargar
-                                </button>
-                                </a>
-                            </div>
-
+                            </a>
                         </div>
 
                     </div>
+
+                    </div>
+
                     <!-- Server 2 End-->
 
-                    <!-- Server 3-->
+                    <!-- Server 3-- NETVIDEO -->
 
-                    <div class="w-[80%] lg:w-full mx-auto p-4 bg-[#fff] shadow-2xl shadow-negative rounded-lg">
-                        <p class="text-[#03210b] text-[30px] leading-[63px] font-bold">
-                            <div style="display: flex; justify-content: center;"> 
-                                <img src="./src/img/apps-movies-2.png" class="w-full shadow-lg rounded-md"/>
-                            </div>
-                        </p>
+                    <div class="w-[80%] lg:w-full mx-auto p-4 bg-[#fff] shadow-2xl shadow-negative rounded-lg flex flex-col justify-around">
+                        <div> 
+                            <img src="./src/img/netvideo-server.png" class="w-full shadow-lg rounded-md"/>
+                        </div>
 
-                        <ul class="w-full mt-4 mb-4 text-sm text-gray-600 ">
+                    <ul class="w-full mt-4 mb-4 text-sm text-gray-600">
+                        <li class="mb-2 text-[#717F87] text-[14px] text-center leading-[12px] font-normal flex items-center ">
+                            Accede solo siendo cliente de Tortuinternet, sin costo extra.
+                        </li>
+                    </ul>
 
-                            <li class="mb-2 text-[#717F87] text-[14px] text-center leading-[12px] font-normal flex items-center ">
-                                Accede solo siendo cliente de Tortuinternet, sin costo extra.
-                            </li>
-                        </ul>
+                    
+                    <div class="flex flex-col gap-3">
 
-                        
-                        <div class="flex flex-col gap-2">
-
-                            <div class="">                               
-
-                                <button type="button" href="http://192.168.50.5:8096/web/index.html#!/home" class="py-4 px-6 bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                    Acceder a App 3
+                        <div class="">                               
+                            <a href="http://192.168.50.3/" alt="Acceso a servidor NETVIDEO">
+                                <button type="button" class="py-4 px-6 bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
+                                        Acceder a NETVIDEO
                                 </button>
-
-                            </div>
-
-                            <div class="my-1">
-                                <button type="button" href="https://play.google.com/store/apps/details?id=com.mb.android" class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                    Ir a Google Playstore
-                                </button>
-                            </div>
-
-                            <div class="my-1">
-                                <a href="#link-apk" download="descripcion">
-                                <button type="button"class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
-                                    Descargar
-                                </button>
-                                </a>
-                            </div>
+                            </a>
 
                         </div>
+
+                        <div class="my-1">
+                            <a href="./src/data/apks/Netvideo_1.27_apkcombo.com.apk" download="Descarga directa APK Netvideo">
+                            <button type="button"class="py-4 px-6  bg-accent-green hover:bg-light-green outline outline-1 outline-accent-green text-white hover:text-accent-green w-full transition ease-in duration-200 text-center text-base font-bold font-lato shadow-md shadow-[#00000068] rounded-md text-[15px] leading-[10px]">
+                                Descargar
+                            </button>
+                            </a>
+                        </div>
+
+                    </div>
 
                     </div>
 
                     <!-- Server 3 End-->
+
 
                 </div>
             </div>
@@ -684,7 +664,7 @@
         
         <!-- logo -->
         <a href="#" class="flex flex-col justify-center items-center text-2xl cursor-pointer mb-4">
-            <img class="w-[80px] lg:w-[36px] lg:hidden block" src="./src/img/logo-min.png" alt="">
+            <img class="w-[95px] lg:w-[36px] lg:hidden block rounded-full" src="./src/img/logo/tortuinternet_logo.png" alt="TortuInternet Logo">
             <h2 class=" text-[#fff] text-2xl ml-2 font-bold hidden lg:block">tortu<span class="bg-accent-green font-lato ml-1 px-2 py-1 text-white">Internet</span></h2>    
             <p class=" text-white text-lg font-lato font-light">Calidad asegurada, de punta a punta.</p>
         </a>
@@ -693,16 +673,16 @@
     <!-- Social media icons container -->
         <div class="mb-6 flex justify-center space-x-2">
             <!-- facebook -->
-            <a href="https://www.facebook.com/tortuinternet" target="_blank" class="hover:text-blue-400 hover:text-opacity-75 transition-all">
+            <a href="https://www.facebook.com/tortuinternet" target="_blank" class="hover:text-accent-green transition-colors">
                 <i class='bx bxl-facebook-circle text-5xl'></i>
             </a>
             <!-- instagram -->
-            <a href="https://www.instagram.com/tortuinternet/" target="_blank" class=" hover:text-pink-600 hover:text-opacity-75 transition-all">
+            <a href="https://www.instagram.com/tortuinternet/" target="_blank" class="hover:text-accent-green transition-colors">
                 <i class='bx bxl-instagram-alt text-5xl' ></i>
             </a>
             <!-- whatsapp -->
 
-            <a href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." class="hover:text-accent-green hover:text-opacity-75 transition-all">
+            <a href="https://api.whatsapp.com/send?phone=5491163987663&text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20planes." class="hover:text-accent-green transition-colors">
                 <i class='bx bxl-whatsapp text-5xl' ></i>
             </a>
 
@@ -731,7 +711,7 @@
         </form>
     </div>
 
-        <div class="mx-auto max-w-screen-xl text-center py-4 bg-[#0000001c]">
+        <div class="mx-auto max-w-screen-xl text-center py-4 ">
             <span class="text-sm text-white sm:text-center"> All Rights Reserved - ©<a href="#" class=" font-bold font-redHat hover:underline"> Tortuinternet </a> - 2024</span>
         </div>
     </footer>
@@ -766,7 +746,7 @@
             },
             });
 
-            var swiper = new Swiper(".deskSwiper", {
+        var swiper = new Swiper(".deskSwiper", {
             slidesPerView: 4,
             centeredSlides: false,
             spaceBetween: -60,
